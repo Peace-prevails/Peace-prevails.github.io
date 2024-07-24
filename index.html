@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jiayi Li's Personal Page</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
+            font-size: 18px; /* Increase base font size */
         }
         header {
             background-color: #333;
@@ -39,31 +41,46 @@
             margin-bottom: 2em;
         }
         .section h2 {
-            border-bottom: 2px solid #333;
-            padding-bottom: 0.5em;
-            margin-bottom: 1em;
+            margin-bottom: 0.5em; /* Reduce margin below headers */
+        }
+        .section p {
+            margin-top: 0.5em; /* Reduce margin above paragraphs */
         }
         footer {
             text-align: center;
-            padding: 1em 0;
-            background-color: #333;
-            color: #fff;
+            padding: 0.5em 0; /* Reduce padding to make the footer smaller */
+            background-color: transparent; /* Remove background */
+            color: #333; /* Change text color to black */
+            font-size: 0.9em; /* Reduce font size for a finer look */
             position: fixed;
             width: 100%;
             bottom: 0;
         }
-        .cv {
-            list-style: none;
-            padding: 0;
-        }
-        .cv li {
-            margin-bottom: 1em;
-        }
         .profile-img {
-            display: block;
             max-width: 100%;
             height: auto;
-            margin-bottom: 2em;
+            width: 300px; /* Adjust the width as needed */
+            margin-right: 2em;
+        }
+        .about-container {
+            display: flex;
+            align-items: flex-start;
+        }
+        .about-text {
+            max-width: 600px;
+        }
+        .cv-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cv-button:hover {
+            background-color: #555;
         }
     </style>
 </head>
@@ -78,27 +95,27 @@
     </nav>
     <div class="container">
         <section id="about" class="section">
-            <img src="jl.jpg" alt="Jiayi Li" class="profile-img">
-            <h2>About Me</h2>
-            <p>Hello! I'm Jiayi Li, a software developer with a passion for technology and innovation.</p>
-            <p>Find me on:</p>
-            <ul>
-                <li><a href="https://github.com/Peace-prevails">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/jiayi-li-b10318250/">LinkedIn</a></li>
-            </ul>
+            <div class="about-container">
+                <img src="jl.jpg" alt="Jiayi Li" class="profile-img">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>Hello! I'm Jiayi Li, a software developer with a passion for technology and innovation.</p>
+                    <p>Find me on:</p>
+                    <ul>
+                        <li><a href="https://github.com/Peace-prevails">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/jiayi-li-b10318250/">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section id="blog" class="section">
             <h2>Blog</h2>
-            <p>Coming soon...</p>
+            <p>Check out my latest blog post:</p>
+            <p><a href="https://joeyli.substack.com/p/peeking-into-your-brain">Peeking into Your Brain</a></p>
         </section>
         <section id="cv" class="section">
             <h2>Curriculum Vitae</h2>
-            <ul class="cv">
-                <li><strong>Education:</strong> Your degrees and institutions</li>
-                <li><strong>Experience:</strong> Your work experience</li>
-                <li><strong>Skills:</strong> Your skills</li>
-                <li><strong>Projects:</strong> Your projects</li>
-            </ul>
+            <a href="Resume_PhD_applicant.pdf" class="cv-button" download>Download CV</a>
         </section>
     </div>
     <footer>
