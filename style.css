@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 body {
-    font-family: 'Roboto', sans-serif; /* 使用细字体 */
+    font-family: 'Pacifico', cursive; /* 使用手写体 */
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -8,8 +10,8 @@ body {
 }
 
 header, footer {
-    background: #f8f9fa; /* 浅灰色背景，非常柔和 */
-    color: #333333; /* 文字颜色与主体保持一致 */
+    background: #f8f9fa; /* 浅灰色背景 */
+    color: #333333;
     padding: 10px 20px;
     text-align: center;
 }
@@ -25,9 +27,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #007bff; /* 亮蓝色，用于链接，提供良好的视觉识别 */
+    color: #007bff; /* 亮蓝色链接 */
     text-decoration: none;
-    font-weight: 300; /* 细体字 */
+    font-weight: normal; /* 移除粗体 */
 }
 
 main {
@@ -37,15 +39,15 @@ main {
 
 article {
     background: #f8f9fa; /* 浅灰色文章背景 */
-    color: #333333; /* 文章文字颜色与主体保持一致 */
+    color: #333333;
     padding: 20px;
     margin: 20px auto;
     width: 80%;
-    border-left: 5px solid #007bff; /* 添加蓝色边框以突出文章 */
+    border-left: 5px solid #007bff; /* 蓝色边框 */
 }
 
 h1, h2 {
-    font-weight: 300; /* 使用细体标题 */
+    font-weight: normal; /* 移除粗体 */
 }
 
 img {
