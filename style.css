@@ -1,0 +1,53 @@
+body {
+    font-family: 'Roboto', sans-serif; /* 使用细字体 */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #ffffff; /* 白色背景 */
+    color: #333333; /* 深灰色文字，柔和且清晰 */
+}
+
+header, footer {
+    background: #f8f9fa; /* 浅灰色背景，非常柔和 */
+    color: #333333; /* 文字颜色与主体保持一致 */
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #007bff; /* 亮蓝色，用于链接，提供良好的视觉识别 */
+    text-decoration: none;
+    font-weight: 300; /* 细体字 */
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+article {
+    background: #f8f9fa; /* 浅灰色文章背景 */
+    color: #333333; /* 文章文字颜色与主体保持一致 */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-left: 5px solid #007bff; /* 添加蓝色边框以突出文章 */
+}
+
+h1, h2 {
+    font-weight: 300; /* 使用细体标题 */
+}
+
+img {
+    border-radius: 50%; /* 圆形图片 */
+}
